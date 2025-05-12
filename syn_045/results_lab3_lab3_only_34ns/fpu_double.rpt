@@ -1,0 +1,862 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'fpu_double' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : reference
+Design : fpu_double
+Version: O-2018.06-SP5
+Date   : Sun Mar 14 17:13:54 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+**FFGEN**                         0.000000     362      0.000000  n, u
+IV_X1_LAY          spicelib      14.980000     463   6935.739788  
+ND_X1_LAY          spicelib      21.990000    1086  23881.139751  
+NR_X1_LAY          spicelib      36.720001     151   5544.720184  
+XR_X1_LAY          spicelib     111.599998       7    781.199989  
+fpu_add                       140914.229334
+                                                 1  140914.229334 h, n, u
+fpu_exceptions                82093.660107       1  82093.660107  h, n, u
+fpu_mul                       1143143.398664
+                                                 1  1143143.398664
+                                                                  h, n, u
+fpu_round                     41685.109789       1  41685.109789  h, n, u
+fpu_sub                       202601.019047
+                                                 1  202601.019047 h, n, u
+-----------------------------------------------------------------------------
+Total 10 references                                 1647580.216654
+
+****************************************
+Design: fpu_add 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+**FFGEN**                         0.000000     692      0.000000  n, u
+IV_X1_LAY          spicelib      14.980000    1309  19608.819401  
+ND_X1_LAY          spicelib      21.990000    2788  61308.119362  
+NR_X1_LAY          spicelib      36.720001     744  27319.680908  
+XR_X1_LAY          spicelib     111.599998      20   2231.999969  
+fpu_add_DW01_add_0            21099.219784       1  21099.219784  h
+fpu_add_DW01_sub_0             3896.279953       1   3896.279953  h
+fpu_add_DW01_sub_1             3896.279953       1   3896.279953  h
+fpu_add_DW_cmp_2               1553.830004       1   1553.830004  h
+-----------------------------------------------------------------------------
+Total 9 references                                  140914.229334
+
+****************************************
+Design: fpu_add_DW01_add_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     115   1722.699947  
+ND_X1_LAY          spicelib      21.990000     236   5189.639946  
+NR_X1_LAY          spicelib      36.720001      49   1799.280060  
+XR_X1_LAY          spicelib     111.599998     111  12387.599831  
+-----------------------------------------------------------------------------
+Total 4 references                                  21099.219784
+
+****************************************
+Design: fpu_add_DW01_sub_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      45    674.099979  
+ND_X1_LAY          spicelib      21.990000      30    659.699993  
+NR_X1_LAY          spicelib      36.720001       9    330.480011  
+XR_X1_LAY          spicelib     111.599998      20   2231.999969  
+-----------------------------------------------------------------------------
+Total 4 references                                   3896.279953
+
+****************************************
+Design: fpu_add_DW01_sub_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      45    674.099979  
+ND_X1_LAY          spicelib      21.990000      30    659.699993  
+NR_X1_LAY          spicelib      36.720001       9    330.480011  
+XR_X1_LAY          spicelib     111.599998      20   2231.999969  
+-----------------------------------------------------------------------------
+Total 4 references                                   3896.279953
+
+****************************************
+Design: fpu_add_DW_cmp_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      19    284.619991  
+ND_X1_LAY          spicelib      21.990000      31    681.689993  
+NR_X1_LAY          spicelib      36.720001      16    587.520020  
+-----------------------------------------------------------------------------
+Total 3 references                                   1553.830004
+
+****************************************
+Design: fpu_exceptions 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+**FFGEN**                         0.000000     562      0.000000  n, u
+IV_X1_LAY          spicelib      14.980000    1165  17451.699467  
+ND_X1_LAY          spicelib      21.990000    1572  34568.279640  
+NR_X1_LAY          spicelib      36.720001     819  30073.681000  
+-----------------------------------------------------------------------------
+Total 4 references                                  82093.660107
+
+****************************************
+Design: fpu_mul 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+**FFGEN**                         0.000000    1743      0.000000  n, u
+IV_X1_LAY          spicelib      14.980000    3720  55725.598297  
+ND_X1_LAY          spicelib      21.990000   10875  239141.247511 
+NR_X1_LAY          spicelib      36.720001    1264  46414.081543  
+XR_X1_LAY          spicelib     111.599998      11   1227.599983  
+fpu_mul_DW01_add_0             9015.339901       1   9015.339901  h
+fpu_mul_DW01_add_1            12099.209867       1  12099.209867  h
+fpu_mul_DW01_add_2             8992.659901       1   8992.659901  h
+fpu_mul_DW01_add_3             9882.719887       1   9882.719887  h
+fpu_mul_DW01_add_4            12842.119865       1  12842.119865  h
+fpu_mul_DW01_add_5            11759.299870       1  11759.299870  h
+fpu_mul_DW01_add_6            11960.949869       1  11960.949869  h
+fpu_mul_DW01_add_7            12693.799866       1  12693.799866  h
+fpu_mul_DW01_add_8            11486.219875       1  11486.219875  h
+fpu_mul_DW01_add_9             4170.199951       1   4170.199951  h
+fpu_mul_DW01_add_10            1936.919983       1   1936.919983  h
+fpu_mul_DW01_sub_0             2728.039970       1   2728.039970  h
+fpu_mul_DW01_sub_2             1167.229990       1   1167.229990  h
+fpu_mul_DW_mult_uns_0         96242.608969       1  96242.608969  h
+fpu_mul_DW_mult_uns_1         96212.648970       1  96212.648970  h
+fpu_mul_DW_mult_uns_2         96242.608969       1  96242.608969  h
+fpu_mul_DW_mult_uns_3         60550.829325       1  60550.829325  h
+fpu_mul_DW_mult_uns_4         54878.729391       1  54878.729391  h
+fpu_mul_DW_mult_uns_5         54878.729391       1  54878.729391  h
+fpu_mul_DW_mult_uns_6         79103.779140       1  79103.779140  h
+fpu_mul_DW_mult_uns_7         71699.879227       1  71699.879227  h
+fpu_mul_DW_mult_uns_8         71699.879227       1  71699.879227  h
+fpu_mul_DW_mult_uns_9          8390.469927       1   8390.469927  h
+-----------------------------------------------------------------------------
+Total 28 references                                 1143143.398664
+
+****************************************
+Design: fpu_mul_DW01_add_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      79   1183.419964  
+ND_X1_LAY          spicelib      21.990000      64   1407.359985  
+NR_X1_LAY          spicelib      36.720001      23    844.560028  
+XR_X1_LAY          spicelib     111.599998      50   5579.999924  
+-----------------------------------------------------------------------------
+Total 4 references                                   9015.339901
+
+****************************************
+Design: fpu_mul_DW01_add_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     108   1617.839951  
+ND_X1_LAY          spicelib      21.990000      95   2089.049978  
+NR_X1_LAY          spicelib      36.720001      31   1138.320038  
+XR_X1_LAY          spicelib     111.599998      65   7253.999901  
+-----------------------------------------------------------------------------
+Total 4 references                                  12099.209867
+
+****************************************
+Design: fpu_mul_DW01_add_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      82   1228.359962  
+ND_X1_LAY          spicelib      21.990000      66   1451.339985  
+NR_X1_LAY          spicelib      36.720001      23    844.560028  
+XR_X1_LAY          spicelib     111.599998      49   5468.399925  
+-----------------------------------------------------------------------------
+Total 4 references                                   8992.659901
+
+****************************************
+Design: fpu_mul_DW01_add_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      99   1483.019955  
+ND_X1_LAY          spicelib      21.990000      78   1715.219982  
+NR_X1_LAY          spicelib      36.720001      24    881.280029  
+XR_X1_LAY          spicelib     111.599998      52   5803.199921  
+-----------------------------------------------------------------------------
+Total 4 references                                   9882.719887
+
+****************************************
+Design: fpu_mul_DW01_add_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      95   1423.099957  
+ND_X1_LAY          spicelib      21.990000     114   2506.859974  
+NR_X1_LAY          spicelib      36.720001      33   1211.760040  
+XR_X1_LAY          spicelib     111.599998      69   7700.399895  
+-----------------------------------------------------------------------------
+Total 4 references                                  12842.119865
+
+****************************************
+Design: fpu_mul_DW01_add_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     110   1647.799950  
+ND_X1_LAY          spicelib      21.990000      90   1979.099979  
+NR_X1_LAY          spicelib      36.720001      30   1101.600037  
+XR_X1_LAY          spicelib     111.599998      63   7030.799904  
+-----------------------------------------------------------------------------
+Total 4 references                                  11759.299870
+
+****************************************
+Design: fpu_mul_DW01_add_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     106   1587.879951  
+ND_X1_LAY          spicelib      21.990000      85   1869.149981  
+NR_X1_LAY          spicelib      36.720001      31   1138.320038  
+XR_X1_LAY          spicelib     111.599998      66   7365.599899  
+-----------------------------------------------------------------------------
+Total 4 references                                  11960.949869
+
+****************************************
+Design: fpu_mul_DW01_add_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      95   1423.099957  
+ND_X1_LAY          spicelib      21.990000     114   2506.859974  
+NR_X1_LAY          spicelib      36.720001      32   1175.040039  
+XR_X1_LAY          spicelib     111.599998      68   7588.799896  
+-----------------------------------------------------------------------------
+Total 4 references                                  12693.799866
+
+****************************************
+Design: fpu_mul_DW01_add_8 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      99   1483.019955  
+ND_X1_LAY          spicelib      21.990000      80   1759.199982  
+NR_X1_LAY          spicelib      36.720001      30   1101.600037  
+XR_X1_LAY          spicelib     111.599998      64   7142.399902  
+-----------------------------------------------------------------------------
+Total 4 references                                  11486.219875
+
+****************************************
+Design: fpu_mul_DW01_add_9 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      38    569.239983  
+ND_X1_LAY          spicelib      21.990000      32    703.679993  
+NR_X1_LAY          spicelib      36.720001       9    330.480011  
+XR_X1_LAY          spicelib     111.599998      23   2566.799965  
+-----------------------------------------------------------------------------
+Total 4 references                                   4170.199951
+
+****************************************
+Design: fpu_mul_DW01_add_10 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000       6     89.879997  
+ND_X1_LAY          spicelib      21.990000       8    175.919998  
+NR_X1_LAY          spicelib      36.720001       6    220.320007  
+XR_X1_LAY          spicelib     111.599998      13   1450.799980  
+-----------------------------------------------------------------------------
+Total 4 references                                   1936.919983
+
+****************************************
+Design: fpu_mul_DW01_sub_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      32    479.359985  
+ND_X1_LAY          spicelib      21.990000      28    615.719994  
+NR_X1_LAY          spicelib      36.720001       8    293.760010  
+XR_X1_LAY          spicelib     111.599998      12   1339.199982  
+-----------------------------------------------------------------------------
+Total 4 references                                   2728.039970
+
+****************************************
+Design: fpu_mul_DW01_sub_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      17    254.659992  
+ND_X1_LAY          spicelib      21.990000      23    505.769995  
+NR_X1_LAY          spicelib      36.720001       5    183.600006  
+XR_X1_LAY          spicelib     111.599998       2    223.199997  
+-----------------------------------------------------------------------------
+Total 4 references                                   1167.229990
+
+****************************************
+Design: fpu_mul_DW_mult_uns_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     471   7055.579784  
+ND_X1_LAY          spicelib      21.990000    1353  29752.469690  
+NR_X1_LAY          spicelib      36.720001     178   6536.160217  
+XR_X1_LAY          spicelib     111.599998     474  52898.399277  
+-----------------------------------------------------------------------------
+Total 4 references                                  96242.608969
+
+****************************************
+Design: fpu_mul_DW_mult_uns_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     469   7025.619785  
+ND_X1_LAY          spicelib      21.990000    1353  29752.469690  
+NR_X1_LAY          spicelib      36.720001     178   6536.160217  
+XR_X1_LAY          spicelib     111.599998     474  52898.399277  
+-----------------------------------------------------------------------------
+Total 4 references                                  96212.648970
+
+****************************************
+Design: fpu_mul_DW_mult_uns_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     471   7055.579784  
+ND_X1_LAY          spicelib      21.990000    1353  29752.469690  
+NR_X1_LAY          spicelib      36.720001     178   6536.160217  
+XR_X1_LAY          spicelib     111.599998     474  52898.399277  
+-----------------------------------------------------------------------------
+Total 4 references                                  96242.608969
+
+****************************************
+Design: fpu_mul_DW_mult_uns_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     309   4628.819859  
+ND_X1_LAY          spicelib      21.990000     791  17394.089819  
+NR_X1_LAY          spicelib      36.720001     101   3708.720123  
+XR_X1_LAY          spicelib     111.599998     312  34819.199524  
+-----------------------------------------------------------------------------
+Total 4 references                                  60550.829325
+
+****************************************
+Design: fpu_mul_DW_mult_uns_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     276   4134.479874  
+ND_X1_LAY          spicelib      21.990000     711  15634.889837  
+NR_X1_LAY          spicelib      36.720001      93   3414.960114  
+XR_X1_LAY          spicelib     111.599998     284  31694.399567  
+-----------------------------------------------------------------------------
+Total 4 references                                  54878.729391
+
+****************************************
+Design: fpu_mul_DW_mult_uns_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     276   4134.479874  
+ND_X1_LAY          spicelib      21.990000     711  15634.889837  
+NR_X1_LAY          spicelib      36.720001      93   3414.960114  
+XR_X1_LAY          spicelib     111.599998     284  31694.399567  
+-----------------------------------------------------------------------------
+Total 4 references                                  54878.729391
+
+****************************************
+Design: fpu_mul_DW_mult_uns_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     431   6456.379803  
+ND_X1_LAY          spicelib      21.990000    1084  23837.159752  
+NR_X1_LAY          spicelib      36.720001     147   5397.840179  
+XR_X1_LAY          spicelib     111.599998     389  43412.399406  
+-----------------------------------------------------------------------------
+Total 4 references                                  79103.779140
+
+****************************************
+Design: fpu_mul_DW_mult_uns_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     378   5662.439827  
+ND_X1_LAY          spicelib      21.990000     976  21462.239777  
+NR_X1_LAY          spicelib      36.720001     135   4957.200165  
+XR_X1_LAY          spicelib     111.599998     355  39617.999458  
+-----------------------------------------------------------------------------
+Total 4 references                                  71699.879227
+
+****************************************
+Design: fpu_mul_DW_mult_uns_8 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     378   5662.439827  
+ND_X1_LAY          spicelib      21.990000     976  21462.239777  
+NR_X1_LAY          spicelib      36.720001     135   4957.200165  
+XR_X1_LAY          spicelib     111.599998     355  39617.999458  
+-----------------------------------------------------------------------------
+Total 4 references                                  71699.879227
+
+****************************************
+Design: fpu_mul_DW_mult_uns_9 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      25    374.499989  
+ND_X1_LAY          spicelib      21.990000      91   2001.089979  
+NR_X1_LAY          spicelib      36.720001      24    881.280029  
+XR_X1_LAY          spicelib     111.599998      46   5133.599930  
+-----------------------------------------------------------------------------
+Total 4 references                                   8390.469927
+
+****************************************
+Design: fpu_round 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+**FFGEN**                         0.000000     258      0.000000  n, u
+IV_X1_LAY          spicelib      14.980000     425   6366.499805  
+ND_X1_LAY          spicelib      21.990000     822  18075.779812  
+NR_X1_LAY          spicelib      36.720001     209   7674.480255  
+XR_X1_LAY          spicelib     111.599998       1    111.599998  
+fpu_round_DW01_add_0           7845.719933       1   7845.719933  h
+fpu_round_DW01_inc_0           1611.029985       1   1611.029985  h
+-----------------------------------------------------------------------------
+Total 7 references                                  41685.109789
+
+****************************************
+Design: fpu_round_DW01_add_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      27    404.459988  
+ND_X1_LAY          spicelib      21.990000      26    571.739994  
+NR_X1_LAY          spicelib      36.720001      26    954.720032  
+XR_X1_LAY          spicelib     111.599998      53   5914.799919  
+-----------------------------------------------------------------------------
+Total 4 references                                   7845.719933
+
+****************************************
+Design: fpu_round_DW01_inc_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000       6     89.879997  
+ND_X1_LAY          spicelib      21.990000       5    109.949999  
+NR_X1_LAY          spicelib      36.720001       5    183.600006  
+XR_X1_LAY          spicelib     111.599998      11   1227.599983  
+-----------------------------------------------------------------------------
+Total 4 references                                   1611.029985
+
+****************************************
+Design: fpu_sub 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+**FFGEN**                         0.000000     694      0.000000  n, u
+IV_X1_LAY          spicelib      14.980000    1861  27877.779148  
+ND_X1_LAY          spicelib      21.990000    4589  100912.108950 
+NR_X1_LAY          spicelib      36.720001     992  36426.241211  
+XR_X1_LAY          spicelib     111.599998       1    111.599998  
+fpu_sub_DW01_cmp6_0            1795.890013       1   1795.890013  h
+fpu_sub_DW01_sub_0             2587.169973       1   2587.169973  h
+fpu_sub_DW01_sub_1            20444.789759       1  20444.789759  h
+fpu_sub_DW01_sub_2             4201.389948       1   4201.389948  h
+fpu_sub_DW_cmp_3               8244.050047       1   8244.050047  h
+-----------------------------------------------------------------------------
+Total 10 references                                 202601.019047
+
+****************************************
+Design: fpu_sub_DW01_cmp6_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      18    269.639992  
+ND_X1_LAY          spicelib      21.990000      31    681.689993  
+NR_X1_LAY          spicelib      36.720001      23    844.560028  
+-----------------------------------------------------------------------------
+Total 3 references                                   1795.890013
+
+****************************************
+Design: fpu_sub_DW01_sub_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      27    404.459988  
+ND_X1_LAY          spicelib      21.990000      25    549.749994  
+NR_X1_LAY          spicelib      36.720001       8    293.760010  
+XR_X1_LAY          spicelib     111.599998      12   1339.199982  
+-----------------------------------------------------------------------------
+Total 4 references                                   2587.169973
+
+****************************************
+Design: fpu_sub_DW01_sub_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000     150   2246.999931  
+ND_X1_LAY          spicelib      21.990000     221   4859.789949  
+NR_X1_LAY          spicelib      36.720001      35   1285.200043  
+XR_X1_LAY          spicelib     111.599998     108  12052.799835  
+-----------------------------------------------------------------------------
+Total 4 references                                  20444.789759
+
+****************************************
+Design: fpu_sub_DW01_sub_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      49    734.019978  
+ND_X1_LAY          spicelib      21.990000      31    681.689993  
+NR_X1_LAY          spicelib      36.720001       9    330.480011  
+XR_X1_LAY          spicelib     111.599998      22   2455.199966  
+-----------------------------------------------------------------------------
+Total 4 references                                   4201.389948
+
+****************************************
+Design: fpu_sub_DW_cmp_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+IV_X1_LAY          spicelib      14.980000      86   1288.279961  
+ND_X1_LAY          spicelib      21.990000     151   3320.489965  
+NR_X1_LAY          spicelib      36.720001      99   3635.280121  
+-----------------------------------------------------------------------------
+Total 3 references                                   8244.050047
+1
+Information: Updating design information... (UID-85)
+Warning: Design 'fpu_double' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : fpu_double
+Version: O-2018.06-SP5
+Date   : Sun Mar 14 17:13:55 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_1.05V_125C   Library: spicelib
+Wire Load Model Mode: top
+
+  Startpoint: i_fpu_add/large_add_reg[1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: i_fpu_add/sum_reg[55]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                          Cap     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  i_fpu_add/large_add_reg[1]/clocked_on (**FFGEN**)       0.00      0.00 #     0.00 r
+  i_fpu_add/large_add_reg[1]/Q (**FFGEN**)     11.50      0.00      0.00       0.00 r
+  i_fpu_add/add_168/A[1] (fpu_add_DW01_add_0)                       0.00       0.00 r
+  i_fpu_add/add_168/U508/Z (IV_X1_LAY)          2.10      0.05      0.16       0.16 f
+  i_fpu_add/add_168/U507/Z (ND_X1_LAY)          2.10      0.06      0.20       0.36 r
+  i_fpu_add/add_168/U506/Z (ND_X1_LAY)          4.10      0.05      0.14       0.50 f
+  i_fpu_add/add_168/U47/Z (ND_X1_LAY)           1.60      0.06      0.17       0.67 r
+  i_fpu_add/add_168/U48/Z (IV_X1_LAY)           2.10      0.06      0.17       0.84 f
+  i_fpu_add/add_168/U46/Z (ND_X1_LAY)           4.10      0.07      0.18       1.02 r
+  i_fpu_add/add_168/U44/Z (ND_X1_LAY)           3.60      0.05      0.14       1.16 f
+  i_fpu_add/add_168/U201/Z (ND_X1_LAY)          2.10      0.06      0.17       1.33 r
+  i_fpu_add/add_168/U504/Z (ND_X1_LAY)          3.60      0.05      0.14       1.47 f
+  i_fpu_add/add_168/U131/Z (IV_X1_LAY)          2.60      0.06      0.23       1.70 r
+  i_fpu_add/add_168/U130/Z (NR_X1_LAY)          2.10      0.04      0.18       1.88 f
+  i_fpu_add/add_168/U132/Z (ND_X1_LAY)          2.10      0.06      0.19       2.07 r
+  i_fpu_add/add_168/U500/Z (ND_X1_LAY)          4.10      0.05      0.14       2.21 f
+  i_fpu_add/add_168/U499/Z (ND_X1_LAY)          2.60      0.06      0.17       2.39 r
+  i_fpu_add/add_168/U497/Z (NR_X1_LAY)          2.60      0.05      0.17       2.56 f
+  i_fpu_add/add_168/U175/Z (NR_X1_LAY)          4.10      0.10      0.18       2.74 r
+  i_fpu_add/add_168/U95/Z (NR_X1_LAY)           2.10      0.05      0.18       2.92 f
+  i_fpu_add/add_168/U94/Z (ND_X1_LAY)           2.10      0.06      0.17       3.09 r
+  i_fpu_add/add_168/U43/Z (ND_X1_LAY)           4.10      0.05      0.14       3.23 f
+  i_fpu_add/add_168/U26/Z (ND_X1_LAY)           1.60      0.06      0.17       3.40 r
+  i_fpu_add/add_168/U27/Z (IV_X1_LAY)           2.10      0.06      0.17       3.57 f
+  i_fpu_add/add_168/U152/Z (ND_X1_LAY)          2.10      0.06      0.17       3.74 r
+  i_fpu_add/add_168/U62/Z (ND_X1_LAY)           4.10      0.05      0.14       3.88 f
+  i_fpu_add/add_168/U60/Z (ND_X1_LAY)           2.60      0.06      0.17       4.05 r
+  i_fpu_add/add_168/U55/Z (NR_X1_LAY)           2.60      0.05      0.17       4.23 f
+  i_fpu_add/add_168/U156/Z (NR_X1_LAY)          4.10      0.10      0.18       4.41 r
+  i_fpu_add/add_168/U149/Z (NR_X1_LAY)          2.10      0.05      0.18       4.58 f
+  i_fpu_add/add_168/U147/Z (ND_X1_LAY)          1.60      0.06      0.17       4.75 r
+  i_fpu_add/add_168/U148/Z (IV_X1_LAY)          2.60      0.06      0.17       4.92 f
+  i_fpu_add/add_168/U183/Z (NR_X1_LAY)          4.10      0.10      0.18       5.11 r
+  i_fpu_add/add_168/U151/Z (NR_X1_LAY)          2.10      0.05      0.18       5.28 f
+  i_fpu_add/add_168/U150/Z (ND_X1_LAY)          2.10      0.06      0.17       5.45 r
+  i_fpu_add/add_168/U484/Z (ND_X1_LAY)          6.10      0.06      0.15       5.60 f
+  i_fpu_add/add_168/U483/Z (ND_X1_LAY)          2.60      0.06      0.20       5.80 r
+  i_fpu_add/add_168/U479/Z (NR_X1_LAY)          2.60      0.05      0.17       5.97 f
+  i_fpu_add/add_168/U159/Z (NR_X1_LAY)          4.10      0.10      0.18       6.16 r
+  i_fpu_add/add_168/U145/Z (NR_X1_LAY)          2.10      0.05      0.18       6.33 f
+  i_fpu_add/add_168/U144/Z (ND_X1_LAY)          2.10      0.06      0.17       6.50 r
+  i_fpu_add/add_168/U474/Z (ND_X1_LAY)          4.10      0.05      0.14       6.64 f
+  i_fpu_add/add_168/U473/Z (ND_X1_LAY)          2.60      0.06      0.20       6.84 r
+  i_fpu_add/add_168/U469/Z (NR_X1_LAY)          2.60      0.05      0.17       7.02 f
+  i_fpu_add/add_168/U186/Z (NR_X1_LAY)          4.10      0.10      0.18       7.20 r
+  i_fpu_add/add_168/U187/Z (IV_X1_LAY)          2.10      0.07      0.17       7.37 f
+  i_fpu_add/add_168/U468/Z (ND_X1_LAY)          8.10      0.10      0.20       7.57 r
+  i_fpu_add/add_168/U465/Z (ND_X1_LAY)          4.10      0.05      0.15       7.72 f
+  i_fpu_add/add_168/U463/Z (ND_X1_LAY)          2.60      0.06      0.17       7.89 r
+  i_fpu_add/add_168/U459/Z (NR_X1_LAY)          2.60      0.05      0.17       8.06 f
+  i_fpu_add/add_168/U108/Z (NR_X1_LAY)          4.10      0.10      0.18       8.24 r
+  i_fpu_add/add_168/U101/Z (NR_X1_LAY)          2.10      0.05      0.18       8.42 f
+  i_fpu_add/add_168/U100/Z (ND_X1_LAY)          2.10      0.06      0.17       8.59 r
+  i_fpu_add/add_168/U454/Z (ND_X1_LAY)          4.10      0.05      0.14       8.73 f
+  i_fpu_add/add_168/U453/Z (ND_X1_LAY)          1.60      0.06      0.19       8.92 r
+  i_fpu_add/add_168/U40/Z (IV_X1_LAY)           2.10      0.06      0.17       9.09 f
+  i_fpu_add/add_168/U38/Z (ND_X1_LAY)           2.10      0.06      0.17       9.27 r
+  i_fpu_add/add_168/U449/Z (ND_X1_LAY)          5.60      0.05      0.15       9.41 f
+  i_fpu_add/add_168/U448/Z (ND_X1_LAY)          2.60      0.06      0.17       9.59 r
+  i_fpu_add/add_168/U444/Z (NR_X1_LAY)          2.60      0.05      0.17       9.76 f
+  i_fpu_add/add_168/U86/Z (NR_X1_LAY)           3.10      0.10      0.18       9.93 r
+  i_fpu_add/add_168/U87/Z (IV_X1_LAY)           2.10      0.07      0.17      10.11 f
+  i_fpu_add/add_168/U230/Z (ND_X1_LAY)          5.60      0.08      0.19      10.30 r
+  i_fpu_add/add_168/U439/Z (ND_X1_LAY)          2.10      0.05      0.14      10.43 f
+  i_fpu_add/add_168/U231/Z (ND_X1_LAY)          8.10      0.10      0.25      10.68 r
+  i_fpu_add/add_168/U435/Z (ND_X1_LAY)          3.60      0.05      0.14      10.83 f
+  i_fpu_add/add_168/U19/Z (IV_X1_LAY)           2.60      0.06      0.23      11.06 r
+  i_fpu_add/add_168/U18/Z (NR_X1_LAY)           2.10      0.04      0.18      11.23 f
+  i_fpu_add/add_168/U20/Z (ND_X1_LAY)           2.10      0.06      0.19      11.43 r
+  i_fpu_add/add_168/U429/Z (ND_X1_LAY)          4.10      0.05      0.14      11.57 f
+  i_fpu_add/add_168/U428/Z (ND_X1_LAY)          2.60      0.06      0.17      11.74 r
+  i_fpu_add/add_168/U424/Z (NR_X1_LAY)          1.60      0.04      0.17      11.92 f
+  i_fpu_add/add_168/U423/Z (IV_X1_LAY)          2.10      0.06      0.22      12.14 r
+  i_fpu_add/add_168/U422/Z (ND_X1_LAY)          4.10      0.05      0.14      12.28 f
+  i_fpu_add/add_168/U421/Z (ND_X1_LAY)          2.60      0.06      0.17      12.45 r
+  i_fpu_add/add_168/U417/Z (NR_X1_LAY)          1.60      0.04      0.17      12.63 f
+  i_fpu_add/add_168/U416/Z (IV_X1_LAY)          2.10      0.06      0.22      12.85 r
+  i_fpu_add/add_168/U415/Z (ND_X1_LAY)          4.10      0.05      0.14      12.99 f
+  i_fpu_add/add_168/U414/Z (ND_X1_LAY)          2.60      0.06      0.17      13.16 r
+  i_fpu_add/add_168/U410/Z (NR_X1_LAY)          1.60      0.04      0.17      13.34 f
+  i_fpu_add/add_168/U409/Z (IV_X1_LAY)          2.10      0.06      0.22      13.56 r
+  i_fpu_add/add_168/U408/Z (ND_X1_LAY)          4.10      0.05      0.14      13.70 f
+  i_fpu_add/add_168/U407/Z (ND_X1_LAY)          1.60      0.06      0.17      13.87 r
+  i_fpu_add/add_168/U197/Z (IV_X1_LAY)          2.10      0.06      0.17      14.04 f
+  i_fpu_add/add_168/U196/Z (ND_X1_LAY)          2.10      0.06      0.17      14.21 r
+  i_fpu_add/add_168/U403/Z (ND_X1_LAY)          4.10      0.05      0.14      14.35 f
+  i_fpu_add/add_168/U402/Z (ND_X1_LAY)          8.60      0.10      0.20      14.55 r
+  i_fpu_add/add_168/U398/Z (NR_X1_LAY)          1.60      0.04      0.18      14.73 f
+  i_fpu_add/add_168/U397/Z (IV_X1_LAY)          2.10      0.06      0.22      14.96 r
+  i_fpu_add/add_168/U396/Z (ND_X1_LAY)          4.10      0.05      0.14      15.10 f
+  i_fpu_add/add_168/U395/Z (ND_X1_LAY)          2.60      0.06      0.17      15.27 r
+  i_fpu_add/add_168/U391/Z (NR_X1_LAY)          1.60      0.04      0.17      15.44 f
+  i_fpu_add/add_168/U390/Z (IV_X1_LAY)          2.10      0.06      0.22      15.66 r
+  i_fpu_add/add_168/U389/Z (ND_X1_LAY)          5.60      0.05      0.15      15.81 f
+  i_fpu_add/add_168/U388/Z (ND_X1_LAY)          2.10      0.06      0.17      15.98 r
+  i_fpu_add/add_168/U21/Z (ND_X1_LAY)           4.10      0.05      0.14      16.13 f
+  i_fpu_add/add_168/U118/Z (ND_X1_LAY)          1.60      0.06      0.17      16.29 r
+  i_fpu_add/add_168/U119/Z (IV_X1_LAY)          2.10      0.06      0.17      16.46 f
+  i_fpu_add/add_168/U121/Z (ND_X1_LAY)          2.10      0.06      0.17      16.64 r
+  i_fpu_add/add_168/U66/Z (ND_X1_LAY)           4.10      0.05      0.14      16.78 f
+  i_fpu_add/add_168/U223/Z (ND_X1_LAY)          8.10      0.10      0.20      16.98 r
+  i_fpu_add/add_168/U376/Z (ND_X1_LAY)          3.60      0.05      0.14      17.12 f
+  i_fpu_add/add_168/U16/Z (IV_X1_LAY)           2.60      0.06      0.23      17.35 r
+  i_fpu_add/add_168/U15/Z (NR_X1_LAY)           2.10      0.04      0.18      17.53 f
+  i_fpu_add/add_168/U17/Z (ND_X1_LAY)           2.10      0.06      0.19      17.72 r
+  i_fpu_add/add_168/U370/Z (ND_X1_LAY)          4.10      0.05      0.14      17.86 f
+  i_fpu_add/add_168/U369/Z (ND_X1_LAY)          1.60      0.06      0.17      18.03 r
+  i_fpu_add/add_168/U166/Z (IV_X1_LAY)          2.10      0.06      0.17      18.20 f
+  i_fpu_add/add_168/U165/Z (ND_X1_LAY)          2.10      0.06      0.17      18.37 r
+  i_fpu_add/add_168/U93/Z (ND_X1_LAY)           4.10      0.05      0.14      18.52 f
+  i_fpu_add/add_168/U365/Z (ND_X1_LAY)          1.60      0.06      0.17      18.69 r
+  i_fpu_add/add_168/U70/Z (IV_X1_LAY)           2.10      0.06      0.17      18.85 f
+  i_fpu_add/add_168/U68/Z (ND_X1_LAY)           2.10      0.06      0.17      19.03 r
+  i_fpu_add/add_168/U361/Z (ND_X1_LAY)          4.10      0.05      0.14      19.17 f
+  i_fpu_add/add_168/U360/Z (ND_X1_LAY)          1.60      0.06      0.17      19.34 r
+  i_fpu_add/add_168/U169/Z (IV_X1_LAY)          2.10      0.06      0.17      19.51 f
+  i_fpu_add/add_168/U168/Z (ND_X1_LAY)          2.10      0.06      0.17      19.68 r
+  i_fpu_add/add_168/U356/Z (ND_X1_LAY)          4.10      0.05      0.14      19.82 f
+  i_fpu_add/add_168/U219/Z (ND_X1_LAY)          8.10      0.10      0.20      20.02 r
+  i_fpu_add/add_168/U352/Z (ND_X1_LAY)          1.60      0.05      0.14      20.16 f
+  i_fpu_add/add_168/U34/Z (IV_X1_LAY)           2.60      0.06      0.23      20.39 r
+  i_fpu_add/add_168/U32/Z (NR_X1_LAY)           3.60      0.06      0.17      20.56 f
+  i_fpu_add/add_168/U33/Z (IV_X1_LAY)           8.10      0.05      0.29      20.85 r
+  i_fpu_add/add_168/U348/Z (ND_X1_LAY)          6.10      0.06      0.15      20.99 f
+  i_fpu_add/add_168/U346/Z (ND_X1_LAY)          2.60      0.06      0.20      21.19 r
+  i_fpu_add/add_168/U113/Z (NR_X1_LAY)          2.60      0.05      0.17      21.36 f
+  i_fpu_add/add_168/U83/Z (NR_X1_LAY)           4.10      0.10      0.18      21.55 r
+  i_fpu_add/add_168/U84/Z (IV_X1_LAY)           2.10      0.07      0.17      21.72 f
+  i_fpu_add/add_168/U217/Z (ND_X1_LAY)          3.60      0.07      0.18      21.90 r
+  i_fpu_add/add_168/U340/Z (ND_X1_LAY)          4.10      0.05      0.14      22.04 f
+  i_fpu_add/add_168/U338/Z (ND_X1_LAY)          1.60      0.06      0.19      22.23 r
+  i_fpu_add/add_168/U92/Z (IV_X1_LAY)           2.10      0.06      0.17      22.40 f
+  i_fpu_add/add_168/U90/Z (ND_X1_LAY)           2.10      0.06      0.17      22.57 r
+  i_fpu_add/add_168/U332/Z (ND_X1_LAY)          4.10      0.05      0.14      22.72 f
+  i_fpu_add/add_168/U331/Z (ND_X1_LAY)          2.60      0.06      0.17      22.89 r
+  i_fpu_add/add_168/U327/Z (NR_X1_LAY)          2.60      0.05      0.17      23.06 f
+  i_fpu_add/add_168/U178/Z (NR_X1_LAY)          1.60      0.09      0.17      23.23 r
+  i_fpu_add/add_168/U179/Z (IV_X1_LAY)          4.10      0.07      0.19      23.42 f
+  i_fpu_add/add_168/U326/Z (ND_X1_LAY)          8.60      0.10      0.20      23.62 r
+  i_fpu_add/add_168/U322/Z (NR_X1_LAY)          1.60      0.04      0.18      23.80 f
+  i_fpu_add/add_168/U321/Z (IV_X1_LAY)          2.10      0.06      0.22      24.03 r
+  i_fpu_add/add_168/U320/Z (ND_X1_LAY)          4.10      0.05      0.14      24.17 f
+  i_fpu_add/add_168/U319/Z (ND_X1_LAY)          1.60      0.06      0.17      24.34 r
+  i_fpu_add/add_168/U105/Z (IV_X1_LAY)          2.10      0.06      0.17      24.51 f
+  i_fpu_add/add_168/U103/Z (ND_X1_LAY)          2.10      0.06      0.17      24.68 r
+  i_fpu_add/add_168/U315/Z (ND_X1_LAY)          4.10      0.05      0.14      24.82 f
+  i_fpu_add/add_168/U314/Z (ND_X1_LAY)          2.60      0.06      0.17      24.99 r
+  i_fpu_add/add_168/U310/Z (NR_X1_LAY)          1.60      0.04      0.17      25.17 f
+  i_fpu_add/add_168/U309/Z (IV_X1_LAY)          2.10      0.06      0.22      25.39 r
+  i_fpu_add/add_168/U308/Z (ND_X1_LAY)          4.10      0.05      0.14      25.53 f
+  i_fpu_add/add_168/U307/Z (ND_X1_LAY)          1.60      0.06      0.17      25.70 r
+  i_fpu_add/add_168/U191/Z (IV_X1_LAY)          2.10      0.06      0.17      25.87 f
+  i_fpu_add/add_168/U190/Z (ND_X1_LAY)          2.10      0.06      0.17      26.04 r
+  i_fpu_add/add_168/U303/Z (ND_X1_LAY)          4.10      0.05      0.14      26.18 f
+  i_fpu_add/add_168/U302/Z (ND_X1_LAY)          1.60      0.06      0.17      26.35 r
+  i_fpu_add/add_168/U194/Z (IV_X1_LAY)          2.10      0.06      0.17      26.52 f
+  i_fpu_add/add_168/U193/Z (ND_X1_LAY)          2.10      0.06      0.17      26.69 r
+  i_fpu_add/add_168/U298/Z (ND_X1_LAY)          2.10      0.05      0.14      26.83 f
+  i_fpu_add/add_168/U297/Z (ND_X1_LAY)          1.60      0.06      0.17      27.00 r
+  i_fpu_add/add_168/U3/Z (IV_X1_LAY)            3.10      0.07      0.18      27.18 f
+  i_fpu_add/add_168/U4/Z (IV_X1_LAY)            8.60      0.05      0.29      27.47 r
+  i_fpu_add/add_168/U293/Z (NR_X1_LAY)          1.60      0.03      0.17      27.64 f
+  i_fpu_add/add_168/U292/Z (IV_X1_LAY)          2.10      0.06      0.22      27.86 r
+  i_fpu_add/add_168/U291/Z (ND_X1_LAY)          4.10      0.05      0.14      28.01 f
+  i_fpu_add/add_168/U290/Z (ND_X1_LAY)          2.60      0.06      0.17      28.18 r
+  i_fpu_add/add_168/U286/Z (NR_X1_LAY)          1.60      0.04      0.17      28.35 f
+  i_fpu_add/add_168/U285/Z (IV_X1_LAY)          2.10      0.06      0.22      28.57 r
+  i_fpu_add/add_168/U284/Z (ND_X1_LAY)          4.10      0.05      0.14      28.72 f
+  i_fpu_add/add_168/U283/Z (ND_X1_LAY)          2.60      0.06      0.17      28.89 r
+  i_fpu_add/add_168/U279/Z (NR_X1_LAY)          1.60      0.04      0.17      29.06 f
+  i_fpu_add/add_168/U278/Z (IV_X1_LAY)          2.10      0.06      0.22      29.28 r
+  i_fpu_add/add_168/U277/Z (ND_X1_LAY)          4.10      0.05      0.14      29.43 f
+  i_fpu_add/add_168/U276/Z (ND_X1_LAY)          2.60      0.06      0.17      29.60 r
+  i_fpu_add/add_168/U270/Z (NR_X1_LAY)          1.60      0.04      0.17      29.77 f
+  i_fpu_add/add_168/U269/Z (IV_X1_LAY)          2.10      0.06      0.22      29.99 r
+  i_fpu_add/add_168/U268/Z (ND_X1_LAY)          4.10      0.05      0.14      30.14 f
+  i_fpu_add/add_168/U267/Z (ND_X1_LAY)          1.60      0.06      0.17      30.30 r
+  i_fpu_add/add_168/U126/Z (IV_X1_LAY)          2.10      0.06      0.17      30.47 f
+  i_fpu_add/add_168/U125/Z (ND_X1_LAY)          2.10      0.06      0.17      30.65 r
+  i_fpu_add/add_168/U263/Z (ND_X1_LAY)          4.10      0.05      0.14      30.79 f
+  i_fpu_add/add_168/U262/Z (ND_X1_LAY)          1.60      0.06      0.17      30.96 r
+  i_fpu_add/add_168/U172/Z (IV_X1_LAY)          2.10      0.06      0.17      31.13 f
+  i_fpu_add/add_168/U171/Z (ND_X1_LAY)          2.10      0.06      0.17      31.30 r
+  i_fpu_add/add_168/U112/Z (ND_X1_LAY)          4.10      0.05      0.14      31.44 f
+  i_fpu_add/add_168/U258/Z (ND_X1_LAY)          2.60      0.06      0.17      31.61 r
+  i_fpu_add/add_168/U254/Z (NR_X1_LAY)          2.60      0.05      0.17      31.79 f
+  i_fpu_add/add_168/U122/Z (NR_X1_LAY)          5.60      0.11      0.19      31.97 r
+  i_fpu_add/add_168/U115/Z (NR_X1_LAY)          2.10      0.05      0.18      32.15 f
+  i_fpu_add/add_168/U114/Z (ND_X1_LAY)          4.10      0.06      0.18      32.33 r
+  i_fpu_add/add_168/U250/Z (ND_X1_LAY)          2.10      0.05      0.14      32.47 f
+  i_fpu_add/add_168/U249/Z (ND_X1_LAY)          1.60      0.06      0.19      32.66 r
+  i_fpu_add/add_168/U31/Z (IV_X1_LAY)           2.10      0.06      0.17      32.83 f
+  i_fpu_add/add_168/U29/Z (ND_X1_LAY)           2.10      0.06      0.17      33.00 r
+  i_fpu_add/add_168/U37/Z (ND_X1_LAY)           2.10      0.05      0.14      33.14 f
+  i_fpu_add/add_168/U245/Z (ND_X1_LAY)          6.10      0.08      0.19      33.33 r
+  i_fpu_add/add_168/U243/Z (XR_X1_LAY)          2.10      0.16      0.34      33.67 f
+  i_fpu_add/add_168/SUM[55] (fpu_add_DW01_add_0)                    0.00      33.67 f
+  i_fpu_add/U27/Z (ND_X1_LAY)                   2.10      0.07      0.18      33.85 r
+  i_fpu_add/U26/Z (ND_X1_LAY)                   0.10      0.05      0.13      33.98 f
+  i_fpu_add/sum_reg[55]/next_state (**FFGEN**)            0.05      0.00      33.98 f
+  data arrival time                                                           33.98
+
+  clock CLK (rise edge)                                            34.00      34.00
+  clock network delay (ideal)                                       0.00      34.00
+  i_fpu_add/sum_reg[55]/clocked_on (**FFGEN**)                      0.00      34.00 r
+  library setup time                                                0.00      34.00
+  data required time                                                          34.00
+  ------------------------------------------------------------------------------------
+  data required time                                                          34.00
+  data arrival time                                                          -33.98
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.02
+
+
+1
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : fpu_double
+Version: O-2018.06-SP5
+Date   : Sun Mar 14 17:13:56 2021
+****************************************
+
+
+Library(s) Used:
+
+    spicelib (File: /local-scratch/localhome/escmc38/Desktop/ensc450/HSPICE/lab2/spicelib_180_ss_105_125C_X1_lab3only.db)
+
+Information: The cells in your design are not characterized for internal power. (PWR-229)
+
+Operating Conditions: ss_1.05V_125C   Library: spicelib
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  39.7079 uW  (100%)
+                         ---------
+Total Dynamic Power    =  39.7079 uW  (100%)
+
+Cell Leakage Power     =  22.9272 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            4.6122            0.0000            4.6122  (  11.61%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           35.0962        2.2927e+04           35.1191  (  88.39%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        39.7084 uW     2.2927e+04 pW        39.7313 uW
+1
+ 
+****************************************
+Report : clocks
+Design : fpu_double
+Version: O-2018.06-SP5
+Date   : Sun Mar 14 17:13:57 2021
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK             34.00   {0 17}              d         {clk}
+--------------------------------------------------------------------------------
+1

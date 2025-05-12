@@ -1,0 +1,89 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'fpu_double' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: The derived static probability value (0.500000) for the clock net 'clk' conflicts with the annotated value (0.505102). Using the annotated value. (PWR-12)
+Warning: The derived toggle rate value (0.111111) for the clock net 'clk' conflicts with the annotated value (0.112245). Using the annotated value. (PWR-12)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort high
+        -verbose
+Design : fpu_double
+Version: O-2018.06-SP5
+Date   : Fri Jan 29 18:55:42 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db)
+
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fpu_double             5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+fpu_double                               15.701 1.28e+03 6.20e+05 1.91e+03 100.0
+  add_248 (fpu_double_DW01_inc_0)         0.205    0.482  204.365    0.891   0.0
+  i_fpu_exceptions (fpu_exceptions)       0.730  165.149 4.81e+04  213.969  11.2
+  i_fpu_round (fpu_round)                 6.792   83.604 2.72e+04  117.632   6.2
+    add_108 (fpu_round_DW01_add_0)        1.316    1.935 5.46e+03    8.715   0.5
+    add_111 (fpu_round_DW01_inc_0)     2.57e-02 7.13e-02  338.761    0.436   0.0
+  i_fpu_mul (fpu_mul)                  1.22e-04  512.635 3.51e+05  864.106  45.2
+    mult_222 (fpu_mul_DW_mult_uns_0)      0.000    0.000 1.03e+04   10.302   0.5
+    mult_221 (fpu_mul_DW_mult_uns_1)      0.000    0.000 9.34e+03    9.343   0.5
+    mult_220 (fpu_mul_DW_mult_uns_2)      0.000    0.000 9.34e+03    9.343   0.5
+    mult_219 (fpu_mul_DW_mult_uns_3)      0.000    0.000 1.43e+04   14.289   0.7
+    mult_218 (fpu_mul_DW_mult_uns_4)      0.000    0.000 1.26e+04   12.555   0.7
+    mult_217 (fpu_mul_DW_mult_uns_5)      0.000    0.000 1.26e+04   12.555   0.7
+    mult_216 (fpu_mul_DW_mult_uns_6)      0.000    0.000 1.62e+03    1.619   0.1
+    mult_215 (fpu_mul_DW_mult_uns_7)      0.000    0.000 1.81e+04   18.080   0.9
+    mult_214 (fpu_mul_DW_mult_uns_8)      0.000    0.000 1.81e+04   18.080   0.9
+    mult_213 (fpu_mul_DW_mult_uns_9)      0.000    0.000 1.81e+04   18.080   0.9
+    add_0_root_add_1_root_add_181_3_ni (fpu_mul_DW01_add_9)
+                                          0.000    0.000  527.256    0.527   0.0
+    add_1_root_add_1_root_add_181_3_ni (fpu_mul_DW01_add_10)
+                                          0.000    0.000 1.11e+03    1.106   0.1
+    sub_188 (fpu_mul_DW01_sub_2)       1.05e-04 1.87e-05  975.348    0.975   0.1
+    add_223 (fpu_mul_DW01_add_8)          0.000    0.000 2.62e+03    2.618   0.1
+    add_224 (fpu_mul_DW01_add_7)          0.000    0.000 1.29e+03    1.292   0.1
+    add_225 (fpu_mul_DW01_add_6)          0.000    0.000 2.48e+03    2.477   0.1
+    add_226 (fpu_mul_DW01_add_5)          0.000    0.000 1.64e+03    1.645   0.1
+    add_227 (fpu_mul_DW01_add_4)          0.000    0.000 1.40e+03    1.396   0.1
+    add_228 (fpu_mul_DW01_add_3)          0.000    0.000 1.03e+03    1.029   0.1
+    add_229 (fpu_mul_DW01_add_2)          0.000    0.000 1.59e+03    1.589   0.1
+    add_230 (fpu_mul_DW01_add_1)          0.000    0.000 1.68e+03    1.678   0.1
+    add_231 (fpu_mul_DW01_add_0)          0.000    0.000 1.84e+03    1.842   0.1
+  i_fpu_sub (fpu_sub)                     1.056  203.378 9.08e+04  295.202  15.4
+    lte_gte_156 (fpu_sub_DW_cmp_3)        0.000    0.000 3.05e+03    3.052   0.2
+    sub_1_root_sub_191_2 (fpu_sub_DW01_sub_2)
+                                          0.000    0.000  653.921    0.654   0.0
+    sub_200 (fpu_sub_DW01_sub_1)          0.000    0.000 3.23e+03    3.229   0.2
+  i_fpu_add (fpu_add)                     0.000  199.140 6.87e+04  267.820  14.0
+    sub_0_root_sub_0_root_sub_159_2 (fpu_add_DW01_sub_0)
+                                          0.000    0.000  715.132    0.715   0.0
+    add_1_root_sub_0_root_sub_159_2 (fpu_add_DW01_add_1)
+                                          0.000    0.000 1.11e+03    1.114   0.1
+    add_168 (fpu_add_DW01_add_0)          0.000    0.000 1.89e+03    1.894   0.1
+    add_176 (fpu_add_DW01_inc_1)          0.000    0.000  299.549    0.300   0.0
+    add_182 (fpu_add_DW01_inc_0)          0.000    0.000  299.549    0.300   0.0
+1

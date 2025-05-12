@@ -1,0 +1,320 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'fpu_double' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : reference
+Design : fpu_double
+Version: O-2018.06-SP5
+Date   : Thu Jan 28 23:39:31 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000     151    160.664002  
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       8     10.640000  
+AND2_X4            NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+AND4_X4            NangateOpenCellLibrary
+                                  3.458000       1      3.458000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     201    267.330009  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      10      7.980000  
+CLKBUF_X2          NangateOpenCellLibrary
+                                  1.064000       9      9.576000  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     358   1618.875941  n
+INV_X1             NangateOpenCellLibrary
+                                  0.532000     226    120.232001  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      11      8.778000  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+MUX2_X1            NangateOpenCellLibrary
+                                  1.862000     204    379.847998  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       2      1.596000  
+NAND2_X4           NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000       3      2.394000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       2      2.128000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+OAI211_X1          NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000      18     23.940001  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+fpu_add                        5649.307922       1   5649.307922  h, n
+fpu_double_DW01_inc_0            15.428000       1     15.428000  h
+fpu_exceptions                 3798.479926       1   3798.479926  h, n
+fpu_mul                       28105.293809       1  28105.293809  h, n
+fpu_round                      2094.483975       1   2094.483975  h, n
+fpu_sub                        6641.221920       1   6641.221920  h, n
+-----------------------------------------------------------------------------
+Total 31 references                                 48949.053505
+1
+Information: Updating design information... (UID-85)
+Warning: Design 'fpu_double' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : fpu_double
+Version: O-2018.06-SP5
+Date   : Thu Jan 28 23:39:31 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: i_fpu_sub/subtra_shift_3_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: i_fpu_sub/diff_reg[54]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu_double         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                          Cap     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  i_fpu_sub/subtra_shift_3_reg[0]/CK (DFF_X1)             0.00      0.00 #     0.00 r
+  i_fpu_sub/subtra_shift_3_reg[0]/Q (DFF_X1)
+                                                3.92      0.04      0.31       0.31 r
+  i_fpu_sub/sub_200/B[0] (fpu_sub_DW01_sub_1)                       0.00       0.31 r
+  i_fpu_sub/sub_200/U5/ZN (INV_X1)              8.02      0.02      0.06       0.38 f
+  i_fpu_sub/sub_200/U1/ZN (NAND2_X2)            3.45      0.03      0.08       0.46 r
+  i_fpu_sub/sub_200/U2/ZN (INV_X2)              2.94      0.01      0.04       0.50 f
+  i_fpu_sub/sub_200/U2_2/CO (FA_X1)             2.94      0.05      0.28       0.78 f
+  i_fpu_sub/sub_200/U2_3/CO (FA_X1)             2.94      0.05      0.30       1.07 f
+  i_fpu_sub/sub_200/U2_4/CO (FA_X1)             2.94      0.05      0.30       1.37 f
+  i_fpu_sub/sub_200/U2_5/CO (FA_X1)             2.94      0.05      0.30       1.67 f
+  i_fpu_sub/sub_200/U2_6/CO (FA_X1)             2.94      0.05      0.30       1.96 f
+  i_fpu_sub/sub_200/U2_7/CO (FA_X1)             2.94      0.05      0.30       2.26 f
+  i_fpu_sub/sub_200/U2_8/CO (FA_X1)             2.94      0.05      0.30       2.55 f
+  i_fpu_sub/sub_200/U2_9/CO (FA_X1)             2.94      0.05      0.30       2.85 f
+  i_fpu_sub/sub_200/U2_10/CO (FA_X1)            2.94      0.05      0.30       3.14 f
+  i_fpu_sub/sub_200/U2_11/CO (FA_X1)            2.94      0.05      0.30       3.44 f
+  i_fpu_sub/sub_200/U2_12/CO (FA_X1)            2.94      0.05      0.30       3.73 f
+  i_fpu_sub/sub_200/U2_13/CO (FA_X1)            2.94      0.05      0.30       4.03 f
+  i_fpu_sub/sub_200/U2_14/CO (FA_X1)            2.94      0.05      0.30       4.32 f
+  i_fpu_sub/sub_200/U2_15/CO (FA_X1)            2.94      0.05      0.30       4.62 f
+  i_fpu_sub/sub_200/U2_16/CO (FA_X1)            2.94      0.05      0.30       4.91 f
+  i_fpu_sub/sub_200/U2_17/CO (FA_X1)            2.94      0.05      0.30       5.21 f
+  i_fpu_sub/sub_200/U2_18/CO (FA_X1)            2.94      0.05      0.30       5.50 f
+  i_fpu_sub/sub_200/U2_19/CO (FA_X1)            2.94      0.05      0.30       5.80 f
+  i_fpu_sub/sub_200/U2_20/CO (FA_X1)            2.94      0.05      0.30       6.09 f
+  i_fpu_sub/sub_200/U2_21/CO (FA_X1)            2.94      0.05      0.30       6.39 f
+  i_fpu_sub/sub_200/U2_22/CO (FA_X1)            2.94      0.05      0.30       6.68 f
+  i_fpu_sub/sub_200/U2_23/CO (FA_X1)            2.94      0.05      0.30       6.98 f
+  i_fpu_sub/sub_200/U2_24/CO (FA_X1)            2.94      0.05      0.30       7.27 f
+  i_fpu_sub/sub_200/U2_25/CO (FA_X1)            2.94      0.05      0.30       7.57 f
+  i_fpu_sub/sub_200/U2_26/CO (FA_X1)            2.94      0.05      0.30       7.87 f
+  i_fpu_sub/sub_200/U2_27/CO (FA_X1)            2.94      0.05      0.30       8.16 f
+  i_fpu_sub/sub_200/U2_28/CO (FA_X1)            2.94      0.05      0.30       8.46 f
+  i_fpu_sub/sub_200/U2_29/CO (FA_X1)            2.94      0.05      0.30       8.75 f
+  i_fpu_sub/sub_200/U2_30/CO (FA_X1)            2.94      0.05      0.30       9.05 f
+  i_fpu_sub/sub_200/U2_31/CO (FA_X1)            2.94      0.05      0.30       9.34 f
+  i_fpu_sub/sub_200/U2_32/CO (FA_X1)            2.94      0.05      0.30       9.64 f
+  i_fpu_sub/sub_200/U2_33/CO (FA_X1)            2.94      0.05      0.30       9.93 f
+  i_fpu_sub/sub_200/U2_34/CO (FA_X1)            2.94      0.05      0.30      10.23 f
+  i_fpu_sub/sub_200/U2_35/CO (FA_X1)            2.94      0.05      0.30      10.52 f
+  i_fpu_sub/sub_200/U2_36/CO (FA_X1)            2.94      0.05      0.30      10.82 f
+  i_fpu_sub/sub_200/U2_37/CO (FA_X1)            2.94      0.05      0.30      11.11 f
+  i_fpu_sub/sub_200/U2_38/CO (FA_X1)            2.94      0.05      0.30      11.41 f
+  i_fpu_sub/sub_200/U2_39/CO (FA_X1)            2.94      0.05      0.30      11.70 f
+  i_fpu_sub/sub_200/U2_40/CO (FA_X1)            2.94      0.05      0.30      12.00 f
+  i_fpu_sub/sub_200/U2_41/CO (FA_X1)            2.94      0.05      0.30      12.29 f
+  i_fpu_sub/sub_200/U2_42/CO (FA_X1)            2.94      0.05      0.30      12.59 f
+  i_fpu_sub/sub_200/U2_43/CO (FA_X1)            2.94      0.05      0.30      12.88 f
+  i_fpu_sub/sub_200/U2_44/CO (FA_X1)            2.94      0.05      0.30      13.18 f
+  i_fpu_sub/sub_200/U2_45/CO (FA_X1)            2.94      0.05      0.30      13.47 f
+  i_fpu_sub/sub_200/U2_46/CO (FA_X1)            2.94      0.05      0.30      13.77 f
+  i_fpu_sub/sub_200/U2_47/CO (FA_X1)            2.94      0.05      0.30      14.06 f
+  i_fpu_sub/sub_200/U2_48/CO (FA_X1)            2.94      0.05      0.30      14.36 f
+  i_fpu_sub/sub_200/U2_49/CO (FA_X1)            2.94      0.05      0.30      14.66 f
+  i_fpu_sub/sub_200/U2_50/CO (FA_X1)            2.94      0.05      0.30      14.95 f
+  i_fpu_sub/sub_200/U2_51/CO (FA_X1)            2.94      0.05      0.30      15.25 f
+  i_fpu_sub/sub_200/U2_52/CO (FA_X1)            2.94      0.05      0.30      15.54 f
+  i_fpu_sub/sub_200/U2_53/CO (FA_X1)            2.94      0.05      0.30      15.84 f
+  i_fpu_sub/sub_200/U2_54/S (FA_X1)             1.77      0.05      0.37      16.20 f
+  i_fpu_sub/sub_200/DIFF[54] (fpu_sub_DW01_sub_1)                   0.00      16.20 f
+  i_fpu_sub/U1346/ZN (AOI22_X1)                 1.95      0.10      0.20      16.41 r
+  i_fpu_sub/U1345/ZN (INV_X1)                   1.34      0.02      0.05      16.45 f
+  i_fpu_sub/diff_reg[54]/D (DFF_X1)                       0.02      0.01      16.46 f
+  data arrival time                                                           16.46
+
+  clock CLK (rise edge)                                            18.00      18.00
+  clock network delay (ideal)                                       0.00      18.00
+  i_fpu_sub/diff_reg[54]/CK (DFF_X1)                                0.00      18.00 r
+  library setup time                                               -0.16      17.84
+  data required time                                                          17.84
+  ------------------------------------------------------------------------------------
+  data required time                                                          17.84
+  data arrival time                                                          -16.46
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  1.38
+
+
+  Startpoint: rst (input port clocked by CLK)
+  Endpoint: i_fpu_add/U674/B1
+            (internal path endpoint)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu_double         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                           Cap     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  input external delay                               0.80       0.80 r
+  rst (in)                      36.33      0.00      0.00       0.80 r
+  i_fpu_add/rst (fpu_add)                            0.00       0.80 r
+  i_fpu_add/U1299/ZN (NOR2_X1)
+                                 3.14      0.02      0.04       0.84 f
+  i_fpu_add/U1355/Z (BUF_X4)    17.60      0.02      0.11       0.95 f
+  i_fpu_add/U1437/ZN (INV_X4)
+                                 5.29      0.02      0.08       1.03 r
+  i_fpu_add/U1436/Z (CLKBUF_X3)
+                                 5.29      0.03      0.09       1.13 r
+  i_fpu_add/U1402/Z (CLKBUF_X3)
+                                14.81      0.05      0.13       1.25 r
+  i_fpu_add/U1393/ZN (INV_X1)
+                                23.06      0.05      0.11       1.36 f
+  i_fpu_add/U1297/ZN (NOR2_X1)
+                                25.00      0.47      0.57       1.94 r
+  i_fpu_add/U1354/ZN (INV_X16)
+                                11.50      0.07      0.17       2.10 f
+  i_fpu_add/U1348/Z (CLKBUF_X3)
+                                13.64      0.03      0.17       2.27 f
+  i_fpu_add/U1317/ZN (INV_X1)
+                                24.26      0.20      0.26       2.53 r
+  i_fpu_add/U674/B1 (AOI22_X1)             0.20      0.02       2.55 r
+  data arrival time                                             2.55
+
+  max_delay                                        200.00     200.00
+  output external delay                              0.00     200.00
+  data required time                                          200.00
+  ---------------------------------------------------------------------
+  data required time                                          200.00
+  data arrival time                                            -2.55
+  ---------------------------------------------------------------------
+  slack (MET)                                                 197.45
+
+
+1
+Loading db file '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : fpu_double
+Version: O-2018.06-SP5
+Date   : Thu Jan 28 23:39:33 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db)
+
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fpu_double             5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.2193 mW   (96%)
+  Net Switching Power  =  45.8933 uW    (4%)
+                         ---------
+Total Dynamic Power    =   1.2652 mW  (100%)
+
+Cell Leakage Power     = 613.4895 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       1.2026e+03            4.9623        2.2681e+05        1.4344e+03  (  76.35%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     16.6502           40.9311        3.8668e+05          444.2593  (  23.65%)
+--------------------------------------------------------------------------------------------------
+Total          1.2193e+03 uW        45.8934 uW     6.1349e+05 nW     1.8787e+03 uW
+1
+ 
+****************************************
+Report : clocks
+Design : fpu_double
+Version: O-2018.06-SP5
+Date   : Thu Jan 28 23:39:33 2021
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK             18.00   {0 9}               d         {clk}
+--------------------------------------------------------------------------------
+1
